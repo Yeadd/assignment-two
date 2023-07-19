@@ -180,6 +180,102 @@ nav li a{
     padding-bottom: 200px;
 }
 
+/* hover styles */
+.hover{
+    padding: 0px 140px;
+    align-items: center;
+}
+.hover-container{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 50px;
+    
+    /* display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px; */
+    /* flex-wrap: wrap; */
+    align-items: center;
+    justify-content: space-around;
+}
+.hover-card{
+    display: flex;
+    /* margin-right: 15px; */
+    /* gap: 30px; */
+    /* display: grid; */
+    /* grid-template-columns: repeat(5, 1fr); */
+    /* /* margin-right: 40px; */
+}
+.hover-card:hover{
+    border: 2px solid palevioletred;
+    border-radius: 50px;
+    color: #F948B2; 
+
+}
+.hover-description:hover{
+    color: #F948B2;
+}
+/* .hover-container-two{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    padding: 40px 50px;
+} */
+.hover-description{
+    color: #0B0223;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+/* footer styles */
+.footer{
+    max-width:1424px ;
+    height: 636px;
+    background-color: #0B0223;
+    align-items: center;
+}
+.footer-container{
+    padding-top: 50px;
+    text-align: center;
+}
+.footer-title{
+    color: #FFF;
+    font-size: 2.8rem;
+    font-weight: 700;
+    align-items: center;
+}
+.footer-link{
+    display: flex;
+    padding-left: 370px;
+    /* justify-content: space-around; */
+}
+.footer-sup{
+    text-align: center;
+    margin-left: 30px;
+    color: #FFF;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.footer-privacy{
+    display: flex;
+    margin-left: 370px;
+}
+.privacy{
+    color: #FFF;
+    margin-left: 40px;
+}
+.footer-idk{
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 16px;
+    font-weight: 500;
+}
+.footer-btn{
+    margin-right: 10px;
+}
+.footer-button{
+    margin: 50px 0px;
+}
+
 
 
 /* RESPONSIVE MOBILE */
@@ -187,8 +283,8 @@ nav li a{
 @media screen and (max-width:576px) {
     nav,
     nav > ul,
-    .funny-img
-    
+    .funny-img,
+    .online-container
     {
         flex-direction: column;
 
@@ -198,9 +294,7 @@ nav li a{
         padding: 0px ;
         gap:10px;
         text-align: center;
-    
     }
-
     nav > ul{
         gap: 20px;
     }
@@ -211,8 +305,6 @@ nav li a{
         padding: 20px;
         margin: 0px;
     }
-    /* nav */
-
     /* banner */
     .banner
     {
@@ -225,14 +317,92 @@ nav li a{
     .banner img{
         max-width: 100%;
     }
-    .online-container{
-        flex-direction: column-reverse;
+    /* online */
+    .online-img{
+        max-width: 100%;
+        padding: 0px;
+        margin: 0px;
+        text-align: center;
+        max-height: 400px;
+    }
+    .online-img img{
+        margin-bottom: 50px;
     }
     .nd-img{
+        max-width: 50%;
         position: relative;
-        bottom: 0%;
+        left: 190px;
+        padding: 0px;
+    }
+    .online-container{
+        text-align: center;
+        margin-top: -100px;
+        padding: 10px;
+        margin: 0px;
+    }
+    /* online */
+    /* hover */
+    .hover{
+        padding: 0px;
+        margin: 0px;
+    }
+    .hover-container{
+        margin-top: -180px;
+        max-width: 300px;
+        align-items: center;
+        padding-left: 80px;
+        flex-direction: column;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .hover-card{
+        align-items: center;
+    }
+    .hover-card img{
+        max-width: 70%;
+    }
+    .hover-description{
+        font-size: 0.5rem;
+    }
+    /* footer */
+    .footer-link
+    {
+        padding: 0px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .footer-sup{
+        margin: 0px;
+        margin-top: 20px;
+    }
+    .footer-button,
+    .footer-privacy{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .footer-privacy{
+        margin-top: -50px;
+        margin: 0px;
     }
     }
-
-
+/* MOBILE */
    
+/* RESPONSIVE TABLET */
+@media screen and (min-width:576px) and (max-width:960px) {
+    nav,
+    .banner,
+    .funny,
+    .online-container,
+    .hover,
+    .footer-link{
+        padding: 0px;
+    }
+    .banner,
+    .funny-img,
+    .online-container{
+        flex-direction: column;
+    }
+    .footer-privacy{
+        margin: 0px;
+    }
+}
