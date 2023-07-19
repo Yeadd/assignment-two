@@ -94,6 +94,7 @@ nav li a{
     font-size: 1.3rem;
     font-weight: 600;
     margin-right: 20px;
+    border-style: none;
 }
 .button-two{
     color: #FFF;
@@ -101,7 +102,8 @@ nav li a{
     font-weight: 600;
     border-radius: 48px;
     padding: 21px 40px;
-    background:  #4EC5F7;;
+    background:  #4EC5F7;
+    border-style: none;
 }
 
 .banner img{
