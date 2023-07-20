@@ -3,17 +3,16 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap');
 
-/* SHARED STYLES */
-
+/* SHARED STYLES START */
 *{
     font-family: 'Work Sans', sans-serif;
 }
 .one{
     color:  #FF42A5 ;
 }
+/* SHARED STYLES END */
 
-
-/* NAV STYLES */
+/* NAV STYLES START */
 
 nav{
     display: flex;
@@ -30,7 +29,6 @@ nav > ul{
     display: flex;
     padding: 50px 0px;
 }
-
 .nav-follow{
     color: #3C354F;
     font-size: 1.1rem;
@@ -52,9 +50,9 @@ nav li a{
     font-size: 1.1rem;
     font-weight: 500;
 }
-/* nav end */
+/* NAV STYLES END */
 
-/*  BANNER STYLES */
+/*  BANNER STYLES START */
 .banner{
     display: flex;
     align-items: center;
@@ -83,7 +81,6 @@ nav li a{
     font-weight: 500;
 }
 .button{
-    /* gap: 24px; */
     margin-top: 40px;
 }
 .button-one{
@@ -105,54 +102,63 @@ nav li a{
     background:  #4EC5F7;
     border-style: none;
 }
-
 .banner img{
     max-width: 600px;
 }
+/* BANNER STYLES END */
 
-/* funny styles */
+/* FUNNY STYLES START */
 .funny {
-    /* display: flex; */
     padding: 0px 140px;
+}
+.funny-title{
+    color: #0B0223;
+    font-size: 3rem;
+    font-weight: 700;
+}
+.funny-description{
+    color: #534C64;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+.img-description{
+    color: #534C64;
+    font-size: 1rem;
+    font-weight: 500;
 }
 .card-container .card-other-img{
    max-width:242px ; 
     height: 300px;
+    align-items: center;
 }
 .funny-content {
     text-align: center;
 }
-
 .funny-img {
     margin-top: 60px;
     display: flex;
     gap: 10px;
     justify-content: space-around;
-    /* text-align: center; */
 }
-
 .funny-img .card {
     position: relative;
     width: 242px;
     height: 300px;
     border-radius: 5px;
-    overflow: hidden; /* Hide the overflow for overlay */
+    overflow: hidden;
 }
-
 .funny-img .card-img {
     width: 100%;
     height: 100%;
     transition: transform 0.3s ease;
 }
-
 .funny-img .img-overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7); /* Adjust overlay background color and opacity */
-    border: 2px solid #FF42A5;
+    background-color: rgba(0, 0, 0, 0.7);
     border-radius: 5px;
     display: flex;
     flex-direction: column;
@@ -161,7 +167,6 @@ nav li a{
     opacity: 0;
     transition: opacity 0.3s ease;
 }
-
 .funny-img .card:hover .img-overlay {
     opacity: 1;
 }
@@ -173,13 +178,16 @@ nav li a{
     border-radius: 5px;
     cursor: pointer;
 }
+.funny-two{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* FUNNY STYLES END */
 
 
-/* funny end */
-
-
-/* online styles */
-
+/* ONLINE STYLES START */
 .online-container{
     display: flex;
     padding: 0px 140px;
@@ -220,8 +228,9 @@ nav li a{
 .online-content{
     padding-bottom: 200px;
 }
+/* ONLINE STYLES END */
 
-/* hover styles */
+/* HOVER STYLES START */
 .hover{
     padding: 0px 140px;
     align-items: center;
@@ -231,45 +240,28 @@ nav li a{
     display: flex;
     flex-wrap: wrap;
     row-gap: 50px;
-    
-    /* display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 15px; */
-    /* flex-wrap: wrap; */
     align-items: center;
     justify-content: space-around;
 }
 .hover-card{
     display: flex;
-    /* margin-right: 15px; */
-    /* gap: 30px; */
-    /* display: grid; */
-    /* grid-template-columns: repeat(5, 1fr); */
-    /* /* margin-right: 40px; */
 }
 .hover .hover-card:hover {
     border: 2px solid palevioletred;
     border-radius: 50px;
     color: #F948B2; 
-
 }
 .hover-description:hover{
     color: #F948B2;
 }
-/* .hover-container-two{
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: space-around;
-    padding: 40px 50px;
-} */
 .hover-description{
     color: #0B0223;
     font-size: 1.2rem;
     font-weight: 600;
 }
+/* HOVER STYLES END */
 
-/* footer styles */
+/* FOOTER STYLES START */
 .footer{
     max-width:1424px ;
     height: 636px;
@@ -289,7 +281,6 @@ nav li a{
 .footer-link{
     display: flex;
     padding-left: 370px;
-    /* justify-content: space-around; */
 }
 .footer-sup{
     text-align: center;
@@ -319,10 +310,10 @@ nav li a{
 .footer-button{
     margin: 50px 0px;
 }
+/* FOOTER STYLES END */
 
 
-
-/* RESPONSIVE MOBILE */
+/* RESPONSIVE MOBILE START */
 
 @media screen and (max-width:576px) {
     nav,
@@ -333,7 +324,7 @@ nav li a{
         flex-direction: column;
 
     }
-    /* nav */
+    /* NAV */
     nav{
         padding: 0px ;
         gap:10px;
@@ -349,14 +340,14 @@ nav li a{
         padding: 20px;
         margin: 0px;
     }
-    /* banner */
+    /* BANNER */
     .banner
     {
         flex-direction: column-reverse;
         padding: 30px;
     }
     .banner-container{
-        padding: 0px 70px;
+        padding: 0px 60px;
     }
     .banner img{
         max-width: 100%;
@@ -364,7 +355,7 @@ nav li a{
     .button{
         display: flex;
     }
-    /* online */
+    /* ONLINE */
     .online-img{
         max-width: 100%;
         padding: 0px;
@@ -387,17 +378,16 @@ nav li a{
         padding: 10px;
         margin: 0px;
     }
-    /* online */
-    /* hover */
+    /* HOVER */
     .hover{
         padding: 0px;
         margin: 0px;
     }
     .hover-container{
         margin-top: -180px;
-        max-width: 300px;
+        max-width: 400px;
         align-items: center;
-        padding-left: 80px;
+        padding-left: 30px;
         flex-direction: column;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -410,15 +400,17 @@ nav li a{
         max-width: 70%;
     }
     .hover-description{
-        font-size: 0.5rem;
+        font-size: 0.8rem;
     }
-    /* footer */
+    /* FOOTER */
+    footer{
+        padding: 0%;
+    }
     .footer-link
     {
         padding: 0px;
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-       
+        grid-template-columns: repeat(3, 1fr);  
     }
     .footer-sup{
         margin: 0px;
@@ -439,15 +431,12 @@ nav li a{
         margin-top: -50px;
         margin: 0px;
     }
-
-    .funny {
-        /* text-align: center; */
-        /* padding-right: 40px; */
+    .funny-img{
+        padding-left: 80px;}
     }
-    }
-/* MOBILE */
+/* RESPONSIVE MOBILE END */
    
-/* RESPONSIVE TABLET */
+/* RESPONSIVE TABLET START */
 @media screen and (min-width:576px) and (max-width:960px) {
     nav,
     .banner,
@@ -458,14 +447,17 @@ nav li a{
         padding: 0px;
     }
     .banner,
-    .funny-img,
     .online-container{
         flex-direction: column;
     }
     .footer-privacy{
         margin: 0px;
     }
-    .funny {
-        text-align: center;
+    .funny-img{
+        padding-left: 100px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
+
 }
+/* RESPONSIVE TABLET END */
