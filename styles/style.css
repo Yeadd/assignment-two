@@ -166,6 +166,7 @@ nav li a{
     align-items: center;
     opacity: 0;
     transition: opacity 0.3s ease;
+    cursor: pointer;
 }
 .funny-img .card:hover .img-overlay {
     opacity: 1;
@@ -176,7 +177,7 @@ nav li a{
     color: #FF42A5;
     border: none;
     border-radius: 5px;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 .funny-two{
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
@@ -307,6 +308,7 @@ nav li a{
     margin-right: 10px;
     background-color: #0B0223;
     border-style: none;
+    cursor: pointer;
 }
 .footer-button{
     margin: 50px 0px;
@@ -422,6 +424,7 @@ nav li a{
         grid-template-columns: repeat(3, 1fr);
     }
     .footer-privacy{
+        /* padding-left: 20px; */
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
